@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lnBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:orientation="horizontal"
+            android:layout_width="140dp"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/imgBuku"
+                android:tag="image_tag"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_image_24"
+                tools:ignore="ContentDescription,InefficientWeight" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@+id/ln1"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/s1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/tvJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Habis gelap terbitlah terang "
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvId_laporan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/s1"
+                android:text="ID"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvLabelPengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Penulis : "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvPengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/s1"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/tvLabelPengarang"
+                android:text="Nama"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvLabelPenerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLabelPengarang"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Penerbit : "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvPenerbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLabelPengarang"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tvLabelPenerbit"
+                android:text="Nama"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvLabelTahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPenerbit"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Tahun terbit : "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvTahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLabelPenerbit"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/tvLabelTahun"
+                android:text="Tahun"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvLabelHalaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTahun"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Jumlah Halaman : "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvHalaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTahun"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/tvLabelHalaman"
+                android:text="Halaman"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTengah"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ln1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnUbah"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ln1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/tvTengah"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="ubah"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ln1"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/tvTengah"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Hapus"
+            tools:ignore="HardcodedText" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "431242956812",
+    "project_id": "book-15cc2",
+    "storage_bucket": "book-15cc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431242956812:android:738c3ac0bce8dba16a9e29",
+        "android_client_info": {
+          "package_name": "ukdw.ac.id.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431242956812-qh0pjmpv1quu7a1v1rm45fjnaocb5h0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvWKIxhi0dYJC9O0zxqDFoSzO24DkdUzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431242956812-qh0pjmpv1quu7a1v1rm45fjnaocb5h0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
